@@ -16,7 +16,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			padding: 100px 20vw;
+			padding: 200px 20vw;
 		}
 		
 									/* Classes to set background colors for each section */
@@ -79,4 +79,23 @@ body {
 			background-color: #0f0f10;
 			z-index: -1;
 			transform: translate(0%, 20%)
+		}
+		.wave {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+			line-height: 0;
+		}
+
+		.wave svg {
+			position: relative;
+			display: block;
+			width: calc(141% + 1.3px);
+			height: 164px;
+		}
+
+		.wave .shape-fill {
+    		fill: #000000;
 		}
