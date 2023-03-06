@@ -7,10 +7,21 @@
 <title>Document</title>
 <link rel="stylesheet" href="https://use.typekit.net/syw6sxj.css">
 <link rel="stylesheet" href="styles.css">
- <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+<script src="scripts/main.js"></script>
 </head>
 <body>
+
 <section class ="blue">
+	<div id="menu">
+	 <div id="menu-items">
+		<a href="/" class="menu-item">Home</a>
+		<a href="/" class="menu-item">Services</a>
+		<a href="/" class="menu-item">Contact Me</a>
+		<a href="/" class="menu-item">About</a>
+	</div>
+	<div id="menu-background-pattern"></div>
+</div>
   <h1>Nice Curves</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi commodi nisi tempora dolorum id rerum ad ipsum laboriosam officiis sit aliquid, aperiam nesciunt ducimus eum ipsam dolorem minus quod!</p>
   <div class="curve"></div>
@@ -36,9 +47,9 @@
 <div class="spacer layer2 flip"></div>
 <section class="pink">
   <div class="blob-content">
-	<h1>Nice Curves</h1>
-  	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi commodi nisi tempora dolorum id rerum ad ipsum laboriosam officiis sit aliquid, aperiam nesciunt ducimus eum ipsam dolorem minus quod!</p>
-	</div>
+    <h1>Nice Curves</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sequi commodi nisi tempora dolorum id rerum ad ipsum laboriosam officiis sit aliquid, aperiam nesciunt ducimus eum ipsam dolorem minus quod!</p>
+  </div>
   <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     <g transform="translate(442.3783495016641 263.4468037777561)">
       <path id="blob1"
@@ -49,15 +60,14 @@
 			d="M166.4 -189.1C191.4 -141.4 170.7 -70.7 157.2 -13.6C143.6 43.6 137.2 87.2 112.2 122.2C87.2 157.2 43.6 183.6 -3.5 187.1C-50.7 190.7 -101.4 171.4 -127.5 136.4C-153.7 101.4 -155.3 50.7 -148.7 6.6C-142.1 -37.5 -127.3 -75 -101.1 -122.6C-75 -170.3 -37.5 -228.1 16.6 -244.8C70.7 -261.4 141.4 -236.8 166.4 -189.1" fill="#BB004B"></path>
     </g>
   </svg>
-
-	<script>
+  <script>
 	const tween = KUTE.fromTo(
 		'#blob1',
 		{ path: '#blob1' },
 		{ path: '#blob2' },
 		{ repeat: 999, duration: 3000, yoyo: true }
 	).start();
-	</script>
+	</script> 
 </section>
 <div class="spacer layer2"></div>
 <section>
