@@ -171,10 +171,14 @@ section {
 	background-position: 0% -25%;
 }
 
-#menu > #menu-background-pattern {
-        background-position: 0% calc(-25% * (var(--active-index, 0) + 1));
-	}
+#menu[data-active-index="1"] > #menu-background-pattern {
+	background-position: 0% -50%;
+}
 
-#menu > #menu-background-image {
-	background-position: center calc(45% +5%*var(--active-index, 0));
+#menu[data-active-index="2"] > #menu-background-pattern {
+	background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+	background-position: 0% -100%;
 }
